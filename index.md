@@ -3,35 +3,30 @@ layout: default
 title: 首頁
 ---
 
-<p style="text-align:left;">
-  <a href="{{ site.baseurl }}/about"
-     style="
-       display:inline-block;
-       padding:12px 24px;
-       background-color:#6a5acd;
-       color:#fff;
-       text-decoration:none;
-       border-radius:6px;
-       font-weight:bold;
-     ">
+<div style="text-align:left;">
+  <a href="{{ site.baseurl }}/courses"
+     style="display:inline-block;
+            padding:12px 24px;
+            margin-right:12px;
+            background-color:#4CAF50;
+            color:#fff;
+            text-decoration:none;
+            border-radius:6px;
+            font-weight:bold;">
     關於我
   </a>
-</p>
 
-<p style="text-align:left;">
-  <a href="{{ site.baseurl }}/courses"
-     style="
-       display:inline-block;
-       padding:12px 24px;
-       background-color:#4CAF50;
-       color:#fff;
-       text-decoration:none;
-       border-radius:6px;
-       font-weight:bold;
-     ">
+  <a href="{{ site.baseurl }}/about"
+     style="display:inline-block;
+            padding:12px 24px;
+            background-color:#A7C7E7;
+            color:#fff;
+            text-decoration:none;
+            border-radius:6px;
+            font-weight:bold;">
     課程紀錄
   </a>
-</p>
+</div>
 
 
 # 嗨，我是林貞伶 Lin, Chen-Ling 👋
