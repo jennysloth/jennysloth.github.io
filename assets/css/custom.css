@@ -1,0 +1,19 @@
+/* 網站標題字體與位置 */
+h1.site-title {
+  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+  text-align: left;   /* 可改 left、right */
+  font-size: 40px;
+  color: #000;      
+}
+
+/* 按鈕統一樣式 */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-purple { background-color: #D8BFD8; color: #000; }  /* 淺紫 */
+.btn-blue   { background-color: #87CEFA; color: #fff; }  /* 淺藍 */
