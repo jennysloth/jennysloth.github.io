@@ -2,7 +2,6 @@
 layout: default
 title: 首頁
 ---
-# <span class="site-title">首頁</span>
 
 <div style="display:flex; gap:12px; flex-wrap:wrap;">
   <a class="btn btn-blue" href="{{ site.baseurl }}/about">關於我</a>
