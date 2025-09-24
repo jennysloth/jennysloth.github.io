@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 首頁
+title: 軟趴趴的樹懶's WEBSITE
 ---
 
 <div class="btn-row">
