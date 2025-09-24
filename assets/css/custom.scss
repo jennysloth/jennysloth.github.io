@@ -1,9 +1,0 @@
----
----
-
-@import "minimal-mistakes/skins/plum"; // 先套官方紫色
-@import "minimal-mistakes";           // 再載入主題
-
-/* 在此覆蓋主要顏色：調成淡紫 */
-$primary-color: #c8a2c8;   // 淡紫 (lavender purple)
-$link-color:    #b38cc4;   // 連結
