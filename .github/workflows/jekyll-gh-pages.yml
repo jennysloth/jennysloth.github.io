@@ -1,6 +1,33 @@
-title: 我的作品集
-description: 歡迎來到我的 GitHub Pages + Jekyll 網站
-remote_theme: pages-themes/cayman@v0.2.0   # GitHub 官方免費主題
-plugins:
-  - jekyll-remote-theme
-
+name: Build Jekyll with GitHub Pages
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1   # 官方 Jekyll Builder
+        with:
+          source: ./
+          destination: ./_site
+      - uses: actions/upload-pages-artifact@v3
+        with: { path: "./_site" }
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
