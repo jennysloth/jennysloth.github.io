@@ -1,5 +1,5 @@
 title: 我有可愛的老人
-description: Applied Mathematics/Program/Invest/Music(Clarinet)
+description: "Applied Mathematics/Program/Invest/Music(Clarinet)"
 locale: zh-TW
 baseurl: ""
 
@@ -10,18 +10,19 @@ theme_color: purple
 
 include:
   - _pages
+
 collections:
   posts:
     output: true
-  pages:
-    - name: 首頁
-      link: /
-    - name: 經歷
-      link: /experience
-    - name: 關於我
-      link: /about
-    - name: 課程紀錄
-      link: /courses
-    - name: 隨記
-      link: /posts
 
+nav:
+  - name: 首頁
+    link: /
+  - name: 經歷
+    link: /experience
+  - name: 關於我
+    link: /about
+  - name: 課程紀錄
+    link: /courses
+  - name: 隨記
+    link: /posts
