@@ -3,9 +3,18 @@ layout: default
 title: 首頁
 ---
 
-<div style="display:flex; gap:12px; flex-wrap:wrap;">
-  <a class="btn btn-blue" href="{{ site.baseurl }}/about">關於我</a>
-  <a class="btn btn-purple" href="{{ site.baseurl }}/courses">課程紀錄</a> 
+<div style="display:flex; gap:12px; flex-wrap:wrap; justify-content:flex-start;">
+  <a href="{{ site.baseurl }}/about"
+     style="flex:0 0 auto; padding:12px 24px; border-radius:6px;
+            background:#D8BFD8; color:#000; text-decoration:none; font-weight:700;">
+    關於我
+  </a>
+
+  <a href="{{ site.baseurl }}/courses"
+     style="flex:0 0 auto; padding:12px 24px; border-radius:6px;
+            background:#E6E6FA; color:#000; text-decoration:none; font-weight:700;">
+    課程紀錄
+  </a>
 </div>
 
 
