@@ -14,7 +14,6 @@ collections:
   posts:
     output: true
     
-nav:
   - name: 首頁
     link: /
   - name: 經歷
@@ -23,3 +22,6 @@ nav:
     link: /about
   - name: 課程紀錄
     link: /courses
+  - name: 隨記
+    link: /posts
+

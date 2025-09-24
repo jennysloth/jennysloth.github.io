@@ -1,5 +1,4 @@
 ---
-layout: default 
 title: 課程紀錄
 permalink: /courses
 ---

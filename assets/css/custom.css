@@ -1,0 +1,59 @@
+/* 網站標題字體與位置 */
+h1.site-title {
+  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
+  text-align: center;   /* 可改 left、right */
+  font-size: 56px;
+  color: #000;      
+}
+
+/* 改掉主題大標字體與顏色 */
+.page-header h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #b4a7d6; /* 淺紫 */
+  text-align: left;
+  font-size: 48px;
+}
+
+/* 如果想去除漸層背景，可改為單色 */
+.page-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+/* 按鈕統一樣式 */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-purple {
+    background-color: #D8BFD8;
+    color: #000;
+}
+
+.btn-blue {
+    background-color: #87CEFA;
+    color: #000;
+}
+
+.btn-light-purple {
+    background-color: #E6E6FA;
+    color: #000;
+}
+
+/* 按鈕容器樣式 */
+.button-container {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* 基本字體大小（全站） */
+body {
+  font-size: 18px;
+  line-height: 1.6;
+}
