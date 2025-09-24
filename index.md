@@ -4,11 +4,11 @@ title: 首頁
 ---
 
 <div class="btn-row">
-  <a href="{{ site.baseurl }}/about" class="btn btn-purple">
+  <a href="{{ site.baseurl }}/about" class="btn-purple">
     關於我
   </a>
 
-  <a href="{{ site.baseurl }}/courses" class="btn btn-light-purple">
+  <a href="{{ site.baseurl }}/courses" class="btn-light-purple">
     課程紀錄
   </a>
 
