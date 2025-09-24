@@ -3,7 +3,7 @@ layout: default
 title: 首頁
 ---
 
-<div class="button-container">
+<div class="btn-row">
   <a href="{{ site.baseurl }}/about" class="btn btn-purple">
     關於我
   </a>

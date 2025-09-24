@@ -45,11 +45,12 @@ h1.site-title {
 }
 
 /* 按鈕容器樣式 */
-.button-container {
+.btn-row {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
   justify-content: flex-start;
+  margin-top: 20px;
 }
 
 /* 基本字體大小（全站） */
