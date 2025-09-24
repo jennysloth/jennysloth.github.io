@@ -2,30 +2,11 @@
 layout: default
 title: 首頁
 ---
+# <span class="site-title">首頁</span>
 
-<div style="text-align:left;">
-  <a href="{{ site.baseurl }}/about"
-     style="display:inline-block;
-            padding:12px 24px;
-            margin-right:12px;
-            background-color:#E6E6FA;
-            color:#000;
-            text-decoration:none;
-            border-radius:6px;
-            font-weight:bold;">
-    關於我
-  </a>
-
-  <a href="{{ site.baseurl }}/courses"
-     style="display:inline-block;
-            padding:12px 24px;
-            background-color:#A7C7E7;
-            color:#000;
-            text-decoration:none;
-            border-radius:6px;
-            font-weight:bold;">
-    課程紀錄
-  </a>
+<div style="display:flex; gap:12px; flex-wrap:wrap;">
+  <a class="btn btn-purple" href="{{ site.baseurl }}/courses">課程紀錄</a>
+  <a class="btn btn-blue" href="{{ site.baseurl }}/about">關於我</a>
 </div>
 
 
