@@ -1,12 +1,7 @@
-title: jennysloth
+title: 
 description: 我的小天地
 baseurl: ""
 locale: zh-TW
-remote_theme: mmistakes/minimal-mistakes
-minimal_mistakes_skin: "plum"
-
-plugins:
-  - jekyll-include-cache
 
 include:
   - _pages
