@@ -1,21 +1,10 @@
 title: 我有可愛的老人
 description: 我的小天地
-baseurl: ""
 locale: zh-TW
 
-remote_theme: mmistakes/minimal-mistakes 
-minimal_mistakes_skin: "plum"             
+remote_theme: pages-themes/cayman@v0.2.0
 plugins:
-  - jekyll-include-cache
-sass:
-  sass_dir: assets/css
-
-include:
-  - _pages
-
-collections:
-  posts:
-    output: true
+  - jekyll-remote-them
     
 nav:
   - name: 首頁
