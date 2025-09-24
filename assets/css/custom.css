@@ -6,6 +6,19 @@ h1.site-title {
   color: #000;      
 }
 
+/* 改掉主題大標字體與顏色 */
+.page-header h1 {
+  font-family: "Noto Sans TC", sans-serif;
+  color: #b4a7d6; /* 淺紫 */
+  text-align: left;
+}
+
+/* 如果想去除漸層背景，可改為單色 */
+.page-header {
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
 /* 按鈕統一樣式 */
 .btn {
   display: inline-block;
@@ -16,4 +29,4 @@ h1.site-title {
 }
 
 .btn-purple { background-color: #D8BFD8; color: #000; }  /* 淺紫 */
-.btn-blue   { background-color: #87CEFA; color: #fff; }  /* 淺藍 */
+.btn-blue   { background-color: #87CEFA; color: #000; }  /* 淺藍 */
