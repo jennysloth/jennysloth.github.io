@@ -5,8 +5,8 @@ title: 首頁
 # <span class="site-title">首頁</span>
 
 <div style="display:flex; gap:12px; flex-wrap:wrap;">
-  <a class="btn btn-purple" href="{{ site.baseurl }}/courses">課程紀錄</a>
   <a class="btn btn-blue" href="{{ site.baseurl }}/about">關於我</a>
+  <a class="btn btn-purple" href="{{ site.baseurl }}/courses">課程紀錄</a> 
 </div>
 
 
