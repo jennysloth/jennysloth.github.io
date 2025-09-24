@@ -4,23 +4,23 @@ title: 首頁
 ---
 
 <div style="text-align:left;">
-  <a href="{{ site.baseurl }}/courses"
+  <a href="{{ site.baseurl }}/about"
      style="display:inline-block;
             padding:12px 24px;
             margin-right:12px;
-            background-color:#4CAF50;
-            color:#fff;
+            background-color:#E6E6FA;
+            color:#000;
             text-decoration:none;
             border-radius:6px;
             font-weight:bold;">
     關於我
   </a>
 
-  <a href="{{ site.baseurl }}/about"
+  <a href="{{ site.baseurl }}/courses"
      style="display:inline-block;
             padding:12px 24px;
             background-color:#A7C7E7;
-            color:#fff;
+            color:#000;
             text-decoration:none;
             border-radius:6px;
             font-weight:bold;">
