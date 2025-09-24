@@ -23,10 +23,3 @@ title: 軟趴趴的樹懶's WEBSITE
 有遠大的夢想，希望能實現啦  
 現在的我過得真好，愛情、社團、課業 all get！  
 ### <span style="color:#b4a7d6;">好快樂喔😊</span>
-
-
-
-
-
-
-[def]: { site.baseurl }}/post
