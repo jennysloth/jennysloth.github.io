@@ -3,3 +3,35 @@ body {
   font-size: 18px;
   line-height: 1.6;
 }
+
+/* 按鈕列容器 - 垂直排列 */
+.btn-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+
+/* 自訂連結樣式 - 與 Persephone 主題協調 */
+.btn-link {
+  display: block;
+  padding: 12px 28px;
+  margin: 6px 8px 6px 0;
+  font-size: 20px;           /* 字體變大 */
+  font-weight: 700;
+  color: #333;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
+  font-weight: 600;
+}
+
+.btn-link:hover {
+  color: #6c63ff;             /* 滑鼠移過時字體變成淡紫藍 */
+  border-bottom-color: #6c63ff;  /* 同步讓底線變色，呈現「出現」效果 */
+}
+.btn-link:active {
+  color: #4b49e0;             /* 點擊時字體變成深紫藍 */
+  border-bottom-color: #4b49e0;  /* 同步讓底線變色，呈現「按下」效果 */
+}

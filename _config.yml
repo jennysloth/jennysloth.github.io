@@ -30,3 +30,8 @@ nav:
     link: /courses/
   - name: 隨記
     link: /posts/
+  - name: 寶寶專區
+    link: /baby/
+
+sass:
+  style: compressed
