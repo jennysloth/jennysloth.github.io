@@ -1,26 +1,32 @@
 /* 按鈕列容器 - 垂直排列 */
 .btn-row {
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  flex-direction: column;
+  gap: 12px;
   margin-top: 16px;
-  justify-content: flex-start;
 }
 
 
 /* 自訂連結樣式 - 與 Persephone 主題協調 */
 .btn-link {
-  display: inline-block;
+  display: block;
   padding: 12px 28px;
-  font-size: 18px;           /* 字體變大 */
+  margin: 6px 8px 6px 0;
+  font-size: 20px;               /* 字體變大 */
   font-weight: 700;
   background: #f3f3ff;
   color: #333;
   text-decoration: none;
-  border-radius: 10px;
-  transition: all .2s ease;
+  border-bottom: 2px solid transparent;
+  transition: all 0.25s ease;
+  font-weight: 600;
 }
 
 .btn-link:hover {
-  background: #e6e6ff; /* 更明顯的懸停效果 */
+  color: #6c63ff;             /* 滑鼠移過時字體變成淡紫藍 */
+  border-bottom-color: #6c63ff;  /* 同步讓底線變色，呈現「出現」效果 */
+}
+.btn-link:active {
+  color: #4b49e0;             /* 點擊時字體變成深紫藍 */
+  border-bottom-color: #4b49e0;  
 }

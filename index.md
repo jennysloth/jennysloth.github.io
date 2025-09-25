@@ -1,5 +1,5 @@
 ---
-layout: home 
+layout: page 
 title: 軟趴趴的樹懶's WEBSITE
 ---
 

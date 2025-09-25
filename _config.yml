@@ -6,7 +6,7 @@ url: "https://jennysloth.github.io"
 author: Lin, Chen-Ling
 email: linchenling233@gmail.com  
 
-remote_theme: "jeffreytse/jekyll-theme-yat@v1.9.1"
+remote_theme: erlzhang/jekyll-theme-persephone
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
@@ -24,6 +24,7 @@ header_pages:
   - _pages/about.md
   - _pages/courses.md
   - _pages/posts.md
+  - _pages/baby.md
 
 # 文章輸出
 paginate: 5
@@ -39,3 +40,5 @@ nav:
   - name: 寶寶專區
     link: /baby/
 
+sass:
+  style: compressed
