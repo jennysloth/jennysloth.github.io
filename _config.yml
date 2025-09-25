@@ -1,12 +1,18 @@
-title: 我有可愛的老人
+title: 軟趴趴的樹懶's WEBSITE
 description: "Applied Mathematics/Program/Invest/Music(Clarinet)"
 locale: zh-TW
 baseurl: ""
+url: "https://jennysloth.github.io"
+author: Lin, Chen-Ling
+email: linchenling233@gmail.com  
 
+# 使用 Persephone 主題
 remote_theme: erlzhang/jekyll-theme-persephone
+
+# GitHub Pages 允許的外掛
 plugins:
   - jekyll-remote-theme
-
+  - jekyll-paginate
 include:
   - _pages
 
@@ -18,10 +24,10 @@ nav:
   - name: 首頁
     link: /
   - name: 經歷
-    link: /experience
+    link: /experience/
   - name: 關於我
-    link: /about
+    link: /about/
   - name: 課程紀錄
-    link: /courses
+    link: /courses/
   - name: 隨記
     link: /posts/

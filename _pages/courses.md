@@ -1,6 +1,7 @@
 ---
+layout: page
 title: 課程紀錄
-permalink: /courses
+permalink: /courses/
 ---
 
 # 課程紀錄
