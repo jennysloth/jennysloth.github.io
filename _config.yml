@@ -1,4 +1,4 @@
-title: 軟趴趴的樹懶's WEBSITE
+title: 早安
 description: "Applied Mathematics/Program/Invest/Music(Clarinet)"
 locale: zh-TW
 baseurl: ""
@@ -13,8 +13,11 @@ remote_theme: erlzhang/jekyll-theme-persephone
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
+exclude:
+  - README.md
+
 include:
-  - _pages
+  - _posts
 
 collections:
   posts:
