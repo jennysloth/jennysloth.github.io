@@ -39,5 +39,3 @@ nav:
   - name: 寶寶專區
     link: /baby/
 
-sass:
-  style: compressed
