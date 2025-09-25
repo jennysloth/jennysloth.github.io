@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: 軟趴趴的樹懶's WEBSITE
 ---
 
@@ -21,7 +21,6 @@ title: 軟趴趴的樹懶's WEBSITE
 
 
 ## <span style="color:#b4a7d6;">嗨，我是軟趴趴的樹懶 👋</span>
-這裡是我的小天地，目前是中興應數大二的學生，偷偷去跨域專長了資管  
-有遠大的夢想，希望能實現啦  
-現在的我過得真好，愛情、社團、課業 all get！  
-### <span style="color:#b4a7d6;">好快樂喔😊</span>
+歡迎來到我的小天地！  
+目前就讀 **中興大學應用數學系大二**，並跨域修習 **資訊管理學系(人工智慧)**  
+### <span style="color:#b4a7d6;">每天都在學習與成長✨</span>

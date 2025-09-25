@@ -3,10 +3,9 @@ description: "Applied Mathematics/Program/Invest/Music(Clarinet)"
 locale: zh-TW
 baseurl: ""
 
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: erlzhang/jekyll-theme-persephone
 plugins:
   - jekyll-remote-theme
-theme_color: purple
 
 include:
   - _pages
@@ -25,4 +24,4 @@ nav:
   - name: 課程紀錄
     link: /courses
   - name: 隨記
-    link: /posts
+    link: /posts/

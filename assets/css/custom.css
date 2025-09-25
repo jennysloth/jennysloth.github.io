@@ -1,34 +1,3 @@
-/* 網站標題字體與位置 */
-h1.site-title {
-  font-family: "Noto Sans TC", "Segoe UI", sans-serif;
-  text-align: center;   /* 可改 left、right */
-  font-size: 56px;
-  color: #000;      
-}
-
-/* 改掉主題大標字體與顏色 */
-.page-header h1 {
-  font-family: "Noto Sans TC", sans-serif;
-  color: #b4a7d6;
-  text-align: center;
-  font-size: 48px;
-}
-
-.site-desc {
-  font-size: 20px;
-  color: #A7C7E7;
-  margin-top: 8px;
-  margin-bottom: 24px;
-  text-align: center; /* 或 left/right */
-}
-
-/* 如果想去除漸層背景，可改為單色 */
-.page-header {
-  background: #5c7bda; 
-  border-bottom: 1px solid #ddd; /* 可以保留或移除 */
-}
-
-
 /* 按鈕統一樣式 */
 .btn {
   display: inline-block;
