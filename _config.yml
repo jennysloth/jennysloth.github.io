@@ -6,18 +6,12 @@ url: "https://jennysloth.github.io"
 author: Lin, Chen-Ling
 email: linchenling233@gmail.com  
 
-# 使用 Persephone 主題
 remote_theme: erlzhang/jekyll-theme-persephone
-
-# GitHub Pages 允許的外掛
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
 exclude:
   - README.md
-
-include:
-  - _posts
 
 collections:
   posts:
