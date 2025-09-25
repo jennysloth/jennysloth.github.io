@@ -14,7 +14,7 @@ title: 軟趴趴的樹懶's WEBSITE
     課程紀錄
   </a>
 
-  <a href="{{ site.baseurl }}/posts" class=".btn-blue">
+  <a href="{{ site.baseurl }}/posts" class="btn-blue">
     隨記
   </a>
 </div>

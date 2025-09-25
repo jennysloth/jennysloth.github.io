@@ -10,15 +10,24 @@ h1.site-title {
 .page-header h1 {
   font-family: "Noto Sans TC", sans-serif;
   color: #b4a7d6; /* 淺紫 */
-  text-align: left;
+  text-align: center;
   font-size: 48px;
+}
+
+.site-desc {
+  font-size: 20px;
+  color: #A7C7E7;
+  margin-top: 8px;
+  margin-bottom: 24px;
+  text-align: center; /* 或 left/right */
 }
 
 /* 如果想去除漸層背景，可改為單色 */
 .page-header {
-  background: #fff;
-  border-bottom: 1px solid #ddd;
+  background: #4169E1; /* 例如 Indigo 深紫色 */
+  border-bottom: 1px solid #ddd; /* 可以保留或移除 */
 }
+
 
 /* 按鈕統一樣式 */
 .btn {
@@ -34,15 +43,17 @@ h1.site-title {
     color: #000;
 }
 
+.btn-light-purple {
+    background-color: #b2b2db;
+    color: #000;
+}
+
 .btn-blue {
     background-color: #87CEFA;
     color: #000;
 }
 
-.btn-light-purple {
-    background-color: #E6E6FA;
-    color: #000;
-}
+
 
 /* 按鈕容器樣式 */
 .btn-row {
