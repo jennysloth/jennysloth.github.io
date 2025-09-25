@@ -24,7 +24,7 @@ h1.site-title {
 
 /* 如果想去除漸層背景，可改為單色 */
 .page-header {
-  background: #4169E1; /* 例如 Indigo 深紫色 */
+  background: #5c7bda; 
   border-bottom: 1px solid #ddd; /* 可以保留或移除 */
 }
 
