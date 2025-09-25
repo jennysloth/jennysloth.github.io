@@ -6,15 +6,12 @@ url: "https://jennysloth.github.io"
 author: Lin, Chen-Ling
 email: linchenling233@gmail.com  
 
-remote_theme: erlzhang/jekyll-theme-persephone
+remote_theme: jeffreytse/jekyll-theme-yat
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
 exclude:
   - README.md
-
-include:
-  - _posts
 
 collections:
   posts:
@@ -22,6 +19,15 @@ collections:
 
 include:
   - _pages
+
+header_pages:
+  - _pages/about.md
+  - _pages/courses.md
+  - _pages/posts.md
+
+# 文章輸出
+paginate: 5
+paginate_path: "/posts/page:num"
 
 nav:
   - name: 關於
