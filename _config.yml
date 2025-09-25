@@ -6,7 +6,7 @@ url: "https://jennysloth.github.io"
 author: Lin, Chen-Ling
 email: linchenling233@gmail.com  
 
-remote_theme: jeffreytse/jekyll-theme-yat
+remote_theme: "jeffreytse/jekyll-theme-yat@v1.9.1"
 plugins:
   - jekyll-remote-theme
   - jekyll-paginate
