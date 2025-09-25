@@ -13,6 +13,9 @@ plugins:
 exclude:
   - README.md
 
+include:
+  - _posts
+
 collections:
   posts:
     output: true
