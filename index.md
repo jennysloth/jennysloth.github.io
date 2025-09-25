@@ -3,6 +3,8 @@ layout: default
 title: 軟趴趴的樹懶's WEBSITE
 ---
 
+
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 <div class="btn-row">
   <a href="{{ site.baseurl }}/about" class="btn-purple">
     關於我
