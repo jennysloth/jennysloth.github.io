@@ -1,0 +1,41 @@
+title: Jennysloth╰(*°▽°*)╯
+description: "Applied Mathematics / Program / Invest / Music(Clarinet) / Life Notes"
+locale: zh-TW
+baseurl: ""
+url: "https://jennysloth.github.io"
+author: Lin, Chen-Ling
+email: linchenling233@gmail.com  
+social:
+  github: jennysloth
+  instagram: ling__0609
+
+remote_theme: erlzhang/jekyll-theme-persephone
+plugins:
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# paginate: 5
+# aginate_path: "/page:num/"
+
+theme_setting:
+  nav_pages:
+    - { title: "關於", url: "/about/" }
+    - { title: "隨記", url: "/posts/" }
+    - { title: "寶寶專區", url: "/baby/" }
+
+
+collections:
+  posts:
+    output: true
+
+include:
+  - _pages
+
+sass:
+  style: compressed
+
+# bundle exec jekyll clean
+# bundle exec jekyll serve
