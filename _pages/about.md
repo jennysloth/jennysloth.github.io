@@ -3,14 +3,13 @@ layout: page
 title: 關於
 permalink: /about/
 ---
-## 專長、興趣  
-超級多。  
-應該有10幾項吧  
-但唯一不會變的就是吃  
+## 關於我
+目前就讀 **中興大學應用數學系大二**，並跨域修習 **資訊管理學系(人工智慧)**，未來希望可以走**金融科技(Fintech)**，希望可以在大學期間學習到經濟(投資)與程式的知識。  
 
-## 聯絡方式
-- Email: linchenling233@gmail.com
-- Instagram: ling.__.0609
-- GitHub: jennysloth
+## 興趣  
+**🎵音樂：**  
+豎笛(Clarinet)、鋼琴(Piano)、聽歌(管樂、鋼琴、K-pop、少數C-pop)  
+待續...
+
 
 
