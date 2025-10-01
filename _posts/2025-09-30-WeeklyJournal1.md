@@ -2,6 +2,7 @@
 layout: post              
 title: 9/27-29 南投三日遊     
 date: 2025-09-30 
+tags: travel notes
 ---
 **摘要**  
 1. 第三次去埔里！

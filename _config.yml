@@ -23,6 +23,7 @@ plugins:
 theme_setting:
   nav_pages:
     - { title: "關於", url: "/about/" }
+    - { title: "課程", url: "/courses/" }
     - { title: "隨記", url: "/posts/" }
     - { title: "寶寶專區", url: "/baby/" }
 
@@ -30,6 +31,12 @@ theme_setting:
 collections:
   posts:
     output: true
+collections:
+  courses:
+    output: true
+    permalink: /courses/:name/
+
+
 
 include:
   - _pages
