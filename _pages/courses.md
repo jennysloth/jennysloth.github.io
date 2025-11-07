@@ -15,7 +15,7 @@ permalink: /courses/
 |  [Data Structures](/courses/data-structures/) | 113-2 | 95 |
 | Linear Algebra(I) |  |  |
 | Linear Algebra(II) |  |  |
-| Statistics | 113-2 | 73(會重修) |
+| Statistics | 113-2 | 73 |
 | Introduction to Analysis(I) | | |
 | Differential Equations | 114-1 | |
 | Numerical Analysis (I) |  |  |
@@ -32,7 +32,7 @@ permalink: /courses/
 
 | 課程名稱 | 修課學期 |  成績  |
 |-------|------|-------|
-|  |  |  |
+| Mathematical Programming (I) | 114-1 |  |
 
 ### 資管系跨域專長30學分
 
