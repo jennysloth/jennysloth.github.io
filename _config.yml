@@ -23,10 +23,8 @@ plugins:
 theme_setting:
   nav_pages:
     - { title: "關於", url: "/about/" }
-    - { title: "課程", url: "/courses/" }
+    - { title: "學習", url: "/learning/" }
     - { title: "隨記", url: "/posts/" }
-    - { title: "寶寶專區", url: "/baby/" }
-    - { title: "朋友專區", url: "/friends/" }
 
 
 collections:
@@ -35,7 +33,7 @@ collections:
 collections:
   courses:
     output: true
-    permalink: /courses/:name/
+    permalink: /learning/:name/
 
 
 
