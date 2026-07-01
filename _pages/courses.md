@@ -18,7 +18,7 @@ permalink: /learning/
 | Statistics | 113-2 |
 | Introduction to Analysis(I) | | 
 | Differential Equations | 114-1 | 
-| Numerical Analysis (I) |  |
+| Numerical Analysis (I) | 114-2 |
 | Introduction to Data Science | 114-1 |
 | Seminar in Industrial and Applied Mathematics |  |
 
@@ -38,7 +38,7 @@ permalink: /learning/
 
 | 課程名稱 | 修課學期 |
 |-------|------|
-|  |  |
+| System Analysis and Design | 114-1 |
 
 ### 校必修28學分
 
