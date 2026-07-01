@@ -1,23 +1,37 @@
 ---
-layout: page
-title: 關於
-permalink: /about/
+layout: about
+title: about
+permalink: /
+subtitle: Applied Mathematics / Programming / FinTech / Clarinet / Life Notes
+
+profile:
+  align: right
+  image: profile.png
+  image_circular: false
+  more_info: >
+    <p>Taiwan</p>
+    <p>Applied mathematics portfolio</p>
+
+selected_papers: false
+social: true
+
+announcements:
+  enabled: true
+  scrollable: false
+  limit: 3
+
+latest_posts:
+  enabled: true
+  scrollable: false
+  limit: 3
 ---
-## ME!
-目前就讀 **中興大學應用數學系大二**，並跨域修習 **資訊管理學系(人工智慧)**，未來希望可以走**金融科技(Fintech)**，可以在大學期間學習到經濟(投資、證券)與程式的知識，碩士希望在新加坡或英國讀。 
 
-## 興趣與專長  
-**🎵音樂：**  
-豎笛(Clarinet)、鋼琴(Piano)、聽歌(管樂、鋼琴、K-pop、少數C-pop)  
-**💻電腦：**   
-程式 → Python(基礎的大致都會了，正在學數據科學那塊，偏金融用途)、R(基礎)   
-架網站(其實對HTML、CSS、JavaScript與git還不熟，但利用偉大的AI還是可以做，還有朋友的幫忙)    
-**💰投資：**  
-股票 → 專注在ETF與金融股，科技股波動太大了、一股的金額太高，心臟承受不住  
-**🎮遊戲：**  
-其實自從開學之後，我就沒有碰過了，基本上只有寒暑假才會碰  
-音遊 → 世界計畫(最高到LV.32)...  
+Hi, I am Chen-Ling Lin. This site is being rebuilt as an academic portfolio for future graduate study, selected projects, coursework, and technical notes.
 
+My current interests sit around applied mathematics, programming, financial technology, and the habit of turning what I learn into clear written notes. The portfolio is organized so that future research work, course projects, reports, and code can live in one place instead of being scattered across posts.
 
+The site will grow in three directions:
 
-
+- **Research direction:** applied mathematics, data science, numerical methods, and fintech-related modeling.
+- **Projects:** programming work, math/data experiments, and selected GitHub repositories.
+- **Notes:** course notes, study logs, reflections, and life records.
