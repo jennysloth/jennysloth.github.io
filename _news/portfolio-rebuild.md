@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started rebuilding this site with al-folio as an academic portfolio for future graduate study.
+重大更新！切換成porfolio模式！

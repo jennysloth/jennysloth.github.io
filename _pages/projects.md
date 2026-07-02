@@ -1,8 +1,8 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: Selected academic, programming, and applied math work.
+description: Selected academic, programming, and notes. 
 nav: true
 nav_order: 2
 display_categories: [academic, programming, notes]

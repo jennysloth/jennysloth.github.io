@@ -1,55 +1,42 @@
 cv:
-  name: Chen-Ling Lin
-  label: Applied Mathematics Student
-  email: linchenling233@gmail.com
-  location: Taiwan
+  name: ""
+  label: ""
+  email: ""
+  location: ""
   image: ""
-  summary: >
-    Applied mathematics student building a portfolio around mathematical thinking,
-    programming practice, data-oriented projects, fintech interests, and selected notes.
+  summary: ""
 
   social_networks:
-    - network: GitHub
-      username: jennysloth
-    - network: Instagram
-      username: ling.__.0609
+    - network: ""
+      username: ""
 
   sections:
     Education:
-      - institution: National Chung Hsing University
-        location: Taiwan
-        area: Applied Mathematics
-        studyType: Undergraduate
-        start_date: 2024
-        end_date: Present
+      - institution: ""
+        location: ""
+        area: ""
+        studyType: ""
+        start_date: ""
+        end_date: ""
         highlights:
-          - Coursework in calculus, linear algebra, statistics, programming, data structures, numerical analysis, and data science.
+          - ""
 
     Research Interests:
-      - name: Applied Mathematics
-        icon: fa-solid fa-square-root-variable
-        keywords: "Numerical analysis, data science, mathematical modeling, fintech"
+      - name: ""
+        icon: ""
+        keywords: ""
 
     Skills:
-      - name: Programming
-        level: Developing
-        icon: fa-solid fa-code
-        keywords: "Python, HTML, CSS, JavaScript, Git"
-      - name: Mathematics
-        level: Developing
-        icon: fa-solid fa-calculator
-        keywords: "Calculus, linear algebra, statistics, data structures, numerical methods"
+      - name: ""
+        level: ""
+        icon: ""
+        keywords: ""
 
     Languages:
-      - name: Mandarin Chinese
-        summary: Native
-      - name: English
-        summary: Academic reading and technical writing practice
+      - name: ""
+        summary: ""
 
     Interests:
-      - name: FinTech
-        icon: fa-solid fa-chart-line
-        keywords: "Investment, data, modeling, financial technology"
-      - name: Music
-        icon: fa-solid fa-music
-        keywords: "Clarinet, piano"
+      - name: ""
+        icon: ""
+        keywords: ""

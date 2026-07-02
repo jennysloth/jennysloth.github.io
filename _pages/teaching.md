@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /courses/
-title: courses
+title: Courses
 description: Coursework and learning record.
 nav: true
 nav_order: 6
