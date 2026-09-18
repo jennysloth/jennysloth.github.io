@@ -25,4 +25,4 @@ latest_posts:
   scrollable: false
   limit: 3
 ---
-待更新
+大家好！我是林貞伶，嗚呼！
