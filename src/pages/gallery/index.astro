@@ -1,8 +1,30 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { galleryAlbums } from '../../data/gallery';
 ---
 <BaseLayout title="Gallery" description="Public albums and visual stories by Chen-Ling Lin.">
-  <header class="page-hero shell"><p class="eyebrow">Photography</p><h1>Gallery</h1><p class="lede">Public albums shaped as visual journals. Locations are approximate, and GPS metadata is removed before publication.</p></header>
-  <section class="section section-soft"><div class="shell"><article class="album-cover"><p class="eyebrow">Travel · Photography</p><h2>Summer in the UK, 2026</h2><p>A seven-city journal. Photographs will be published after the album has been fully edited.</p><div class="city-list small muted"><span>Manchester</span><span>Liverpool</span><span>York</span><span>London</span><span>Cambridge</span><span>Oxford</span><span>Brighton</span></div><p style="margin-top:24px"><span class="small muted">View only · Coming Soon</span></p></article></div></section>
+  <header class="page-hero shell"><p class="eyebrow">Photography</p><h1>Gallery</h1><p class="lede">Public albums shaped as visual journals.</p></header>
+  <section class="section section-soft">
+    <div class="shell album-grid">
+      {galleryAlbums.map((album) => (
+        <article class="album-card">
+          <a href={`/gallery/${album.slug}/`} aria-label={`View ${album.title}`}>
+            {album.cover ? (
+              <img src={album.cover} alt="" loading="lazy" />
+            ) : (
+              <div class="album-placeholder" aria-hidden="true"><span>{album.date}</span></div>
+            )}
+            <div class="album-card-copy">
+              <p class="eyebrow">{album.category}</p>
+              <h2>{album.title}</h2>
+              <p>{album.description}</p>
+              {album.location && <p class="small muted">{album.location}</p>}
+              <span class="text-link small">{album.photos.length ? `${album.photos.length} photos` : 'Album ready for photos'}</span>
+            </div>
+          </a>
+        </article>
+      ))}
+    </div>
+  </section>
   <section class="section"><div class="shell"><div class="section-header"><h2>Browse Albums</h2></div><nav class="category-links"><a href="/categories/life/">Life</a><a href="/categories/travel/">Travel</a><a href="/categories/music/">Music</a><a href="/categories/photography/">Photography</a><a href="/categories/events/">Events</a></nav></div></section>
 </BaseLayout>

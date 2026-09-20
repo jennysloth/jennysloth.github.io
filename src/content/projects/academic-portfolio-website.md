@@ -1,7 +1,7 @@
 ---
 title: "Academic Portfolio Website"
-description: "將原本以備審為主的靜態網站，重新設計成兼顧專業與生活的個人網站。"
-summary: "This project transforms a graduate-application-oriented static website into a maintainable personal journal and portfolio. It brings together editorial design, structured content, accessible interaction, and a foundation for privacy-conscious galleries and protected application materials."
+description: "個人生活紀錄的全方位網站"
+summary: "A personal website for sharing writing, projects, notes, music, photography, and everyday experiences through a clear editorial design and maintainable content system."
 category: "Technical"
 published: 2026-09-20
 status: "published"
@@ -10,28 +10,28 @@ tools: ["Astro", "TypeScript", "Cloudflare"]
 
 ## Overview
 
-這個專案重新整理 Jennysloth 的網站定位與技術架構。網站不再只服務研究所備審，而是成為能長期保存生活、音樂、學習與專案成果的個人空間。
+Jennysloth 是一個結合個人作品集與生活紀錄的網站，用來整理學習成果、技術專案、文章、音樂、攝影與日常觀察。每一類內容都有獨立而清楚的閱讀空間，同時維持一致的視覺與瀏覽體驗。
 
 ## Background
 
-舊版網站由 al-folio 產生，現有倉庫主要保存編譯完成的 HTML，因此內容維護、版面調整與功能擴充都較困難。新版以可維護的內容來源和一致的設計系統重新開始，同時保留既有文章與重要網址。
+網站以個人經驗為核心，讓正式的專案成果與較輕鬆的生活內容可以自然地並存。訪客能從不同主題認識 Jennysloth，也能透過文章與筆記深入閱讀感興趣的內容。
 
 ## Goals
 
 - 平衡個人生活與專業形象。
 - 建立適合中文長文、英文摘要與技術內容的閱讀系統。
 - 讓 Writing、Projects、Notes、Music 和 Gallery 擁有清楚的內容邊界。
-- 為私人相簿和申請資料建立安全的伺服器端保護基礎。
-- 保留無障礙、低動態與隱私友善的使用體驗。
+- 提供快速搜尋、RSS 訂閱與直覺的內容導覽。
+- 維持無障礙、低動態與隱私友善的使用體驗。
 
 ## Process
 
-專案先透過逐題訪談確認內容、語言、分類、隱私與視覺方向，再以線框逐頁驗證資訊架構。公開網站採用 Astro，內容以 Markdown 管理；未來的相簿資料與驗證則規劃由 Cloudflare Workers、D1、R2 與 KV 負責。
+網站使用 Astro 與 TypeScript 建置，文章和專案以 Markdown 管理，讓內容能以一致的格式整理與發布。整體介面採用簡潔的編輯式設計，重視文字層級、閱讀節奏、響應式版面與鍵盤操作。
 
 ## Results
 
-第一階段建立新的公開網站、遷移既有文章、整合搜尋與 RSS，並為後續相簿和受保護內容留下清楚的擴充位置。
+網站集中呈現個人介紹、文章、專案、筆記、音樂與相簿，並整合搜尋和 RSS。清楚的分類與內容架構讓訪客容易探索，也讓日常更新保持簡單。
 
 ## Reflection
 
-這次重建不只是更換外觀，而是重新思考網站應該如何陪伴長期成長。比起一次展示所有內容，更重要的是讓每一篇文章、筆記和專案都能在整理完成後，以適合自己的方式被保存。
+這個網站是一個持續累積的個人空間。每一篇文章、筆記和專案都記錄不同階段的興趣與成長，也讓作品展示和生活分享能以自然、耐讀的方式共存。

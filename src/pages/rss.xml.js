@@ -8,5 +8,5 @@ export async function GET(context) {
     ...writing.map((item) => ({ title: item.data.title, description: item.data.description, pubDate: item.data.published, link: `/writing/${item.id}/` })),
     ...projects.map((item) => ({ title: item.data.title, description: item.data.description, pubDate: item.data.published, link: `/projects/${item.id}/` })),
   ].sort((a, b) => b.pubDate.valueOf() - a.pubDate.valueOf());
-  return rss({ title: 'Jennysloth', description: 'Notes, music, and ordinary days by Chen-Ling Lin.', site: context.site, items });
+  return rss({ title: 'Jennysloth', description: 'I want to see how far I can go.', site: context.site, items });
 }

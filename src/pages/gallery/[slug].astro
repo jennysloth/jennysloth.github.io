@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { galleryAlbums, type GalleryAlbum } from '../../data/gallery';
+
+export function getStaticPaths() {
+  return galleryAlbums.map((album) => ({
+    params: { slug: album.slug },
+    props: { album },
+  }));
+}
+
+interface Props {
+  album: GalleryAlbum;
+}
+
+const { album } = Astro.props;
+---
+
+<BaseLayout title={album.title} description={album.description} image={album.cover}>
+  <header class="page-hero shell album-header">
+    <a class="text-link small" href="/gallery/">← All albums</a>
+    <p class="eyebrow">{album.category}</p>
+    <h1>{album.title}</h1>
+    <p class="lede">{album.description}</p>
+    {album.location && <p class="small muted">{album.location} · {album.date}</p>}
+  </header>
+
+  <section class="section section-soft">
+    <div class="shell">
+      {album.photos.length ? (
+        <div class="photo-grid">
+          {album.photos.map((photo) => (
+            <figure class="photo-card">
+              <img src={photo.src} alt={photo.alt} loading="lazy" />
+              {photo.caption && <figcaption>{photo.caption}</figcaption>}
+            </figure>
+          ))}
+        </div>
+      ) : (
+        <div class="empty-album">
+          <p class="eyebrow">Album ready</p>
+          <h2>Photographs coming soon.</h2>
+          <p class="muted">This album is set up and ready for its first photographs.</p>
+        </div>
+      )}
+    </div>
+  </section>
+</BaseLayout>
