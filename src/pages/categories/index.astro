@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { categories } from '../../data/site';
+---
+<BaseLayout title="Categories" description="Browse Jennysloth by subject."><header class="page-hero shell"><p class="eyebrow">Browse</p><h1>Categories</h1><p class="lede">Explore writing, notes, projects, music, and photography by subject.</p></header><section class="section section-soft"><div class="shell content-index">{categories.map((category) => <section class="index-section"><h2><a href={`/categories/${category.toLowerCase()}/`}>{category}</a></h2><p class="muted">Published entries will appear here.</p></section>)}</div></section></BaseLayout>

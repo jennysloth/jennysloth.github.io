@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+const posts = (await getCollection('writing', ({ data }) => !data.draft)).sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+const formatDate = (date: Date) => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'short', year: 'numeric' }).format(date);
+---
+<BaseLayout title="Writing" description="Life notes, travel, reading, music, and photography by Chen-Ling Lin.">
+  <header class="page-hero shell"><p class="eyebrow">Journal</p><h1>Writing</h1><p class="lede">Life notes, observations, and stories worth keeping.</p></header>
+  <section class="section section-lavender"><div class="shell"><p class="eyebrow">Browse by Category</p><nav class="category-links" aria-label="Writing categories"><a href="/categories/life/">Life</a><a href="/categories/travel/">Travel</a><a href="/categories/reading/">Reading</a><a href="/categories/music/">Music</a><a href="/categories/photography/">Photography</a></nav></div></section>
+  <section class="section"><div class="shell page-grid"><div><div class="section-header"><h2>Latest Writing</h2></div><div class="rule-list">{posts.map((post) => <article class="rule-row update-row"><span class="small muted">{formatDate(post.data.published)}</span><div><h3><a href={`/writing/${post.id}/`}>{post.data.title}</a></h3><span class="small muted">{post.data.category} · {post.data.language}</span></div></article>)}</div></div><aside><h2>Archive</h2><div class="rule-list" style="margin-top:24px"><div class="rule-row"><a href="/categories/2025/">2025</a> <span class="small muted">· 3 stories</span></div></div></aside></div></section>
+</BaseLayout>

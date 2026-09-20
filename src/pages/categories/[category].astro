@@ -1,0 +1,8 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComingSoon from '../../components/ComingSoon.astro';
+import { categories } from '../../data/site';
+export function getStaticPaths() { return [...categories, '2025', 'Events', 'Website', 'Monthly Notes'].map((category) => ({ params: { category: category.toLowerCase().replaceAll(' ', '-') }, props: { category } })); }
+const { category } = Astro.props;
+---
+<BaseLayout title={category} description={`Browse ${category} on Jennysloth.`}><header class="page-hero shell"><p class="eyebrow">Category</p><h1>{category}</h1><p class="lede">Published writing and work filed under {category}.</p></header><section class="section section-soft"><div class="shell"><ComingSoon /></div></section></BaseLayout>

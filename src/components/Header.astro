@@ -1,0 +1,22 @@
+---
+import { Menu, MoonStar, Search } from '@lucide/astro';
+import { navItems } from '../data/site';
+interface Props { currentPath: string }
+const { currentPath } = Astro.props;
+---
+
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="wordmark" href="/">Jennysloth</a>
+    <nav class="site-nav" aria-label="Primary navigation" data-site-nav>
+      {navItems.map((item) => (
+        <a href={item.href} aria-current={currentPath.startsWith(item.href) ? 'page' : undefined}>{item.label}</a>
+      ))}
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" type="button" aria-label="Search" data-search-open><Search size={18} /></button>
+      <button class="icon-button" type="button" aria-label="Switch colour theme" data-theme-toggle><MoonStar size={18} /></button>
+      <button class="icon-button menu-button" type="button" aria-label="Open menu" aria-expanded="false" data-menu-toggle><Menu size={20} /></button>
+    </div>
+  </div>
+</header>

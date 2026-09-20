@@ -1,0 +1,11 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import ComingSoon from '../../components/ComingSoon.astro';
+const projects = await getCollection('projects', ({ data }) => data.status === 'published');
+const groups = ['Academic', 'Technical', 'Personal'] as const;
+---
+<BaseLayout title="Projects" description="Academic, technical, and personal projects by Chen-Ling Lin.">
+  <header class="page-hero shell"><p class="eyebrow">Selected Work</p><h1>Projects</h1><p class="lede">Completed work across mathematics, technology, and personal exploration. Every project is documented only when it is ready.</p></header>
+  <section class="section section-soft"><div class="shell content-index">{groups.map((group) => { const items = projects.filter((project) => project.data.category === group); return <section class="index-section"><h2>{group}</h2>{items.length ? <div class="rule-list">{items.map((project) => <article class="rule-row"><p class="eyebrow">{project.data.tools.join(' · ')}</p><h3><a href={`/projects/${project.id}/`}>{project.data.title}</a></h3><p class="muted">{project.data.description}</p></article>)}</div> : <ComingSoon compact />}</section> })}</div></section>
+</BaseLayout>

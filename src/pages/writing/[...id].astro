@@ -1,0 +1,19 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+export async function getStaticPaths() {
+  const posts = await getCollection('writing', ({ data }) => !data.draft);
+  return posts.map((post) => ({ params: { id: post.id }, props: { post, posts } }));
+}
+const { post, posts } = Astro.props;
+const { Content } = await render(post);
+const formatDate = (date: Date) => new Intl.DateTimeFormat('en-GB', { day: 'numeric', month: 'long', year: 'numeric' }).format(date);
+const related = posts.filter((item: typeof post) => item.id !== post.id).slice(0, 2);
+---
+<BaseLayout title={post.data.title} description={post.data.description}>
+  <article>
+    <header class="article-header"><p class="eyebrow">{post.data.category}</p><h1>{post.data.title}</h1><p class="lede" style="margin:20px auto 0">{post.data.description}</p><div class="article-meta small"><span>{formatDate(post.data.published)}</span><span>{post.data.language}</span></div></header>
+    <div class="article-body prose"><Content /><div class="tag-row small"><span class="muted">Tagged</span>{post.data.tags.map((tag: string) => <a href={`/categories/${tag.toLowerCase().replaceAll(' ', '-')}/`}>{tag}</a>)}</div></div>
+  </article>
+  <section class="section section-lavender"><div class="shell"><div class="section-header"><h2>Related Stories</h2></div><div class="related-grid">{related.map((item: typeof post) => <article class="story-compact"><p class="eyebrow">{item.data.category}</p><h3><a href={`/writing/${item.id}/`}>{item.data.title}</a></h3><p class="muted">{item.data.description}</p></article>)}</div></div></section>
+</BaseLayout>

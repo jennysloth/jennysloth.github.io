@@ -1,0 +1,59 @@
+---
+import { Search, X } from '@lucide/astro';
+---
+
+<dialog class="search-dialog" data-search-dialog>
+  <div class="search-dialog-inner">
+    <div class="search-dialog-header">
+      <h2>Search</h2>
+      <button class="icon-button" type="button" aria-label="Close search" data-search-close><X size={20} /></button>
+    </div>
+    <label class="search-field">
+      <Search size={18} aria-hidden="true" />
+      <span class="sr-only">Search the site</span>
+      <input type="search" placeholder="Search writing, projects, notes, and music" data-search-input />
+    </label>
+    <div class="search-results" data-search-results aria-live="polite">
+      <p class="muted">Start typing to search the public site.</p>
+    </div>
+  </div>
+</dialog>
+
+<script>
+  const dialog = document.querySelector('[data-search-dialog]');
+  const input = document.querySelector('[data-search-input]');
+  const results = document.querySelector('[data-search-results]');
+  const entries = [
+    ['About', '/about/', 'Personal introduction, current focus, and contact.'],
+    ['十月記事！', '/writing/2025-october/', 'Life, music, coursework, and ordinary days.'],
+    ['九月記事！', '/writing/2025-september/', 'Monthly life notes from September 2025.'],
+    ['Hello World', '/writing/hello-world/', 'The beginning of this website.'],
+    ['Academic Portfolio Website', '/projects/academic-portfolio-website/', 'A personal website rebuild and migration.'],
+    ['Coursework', '/notes/coursework/', 'Applied mathematics and supporting coursework.'],
+    ['Music', '/music/', 'Clarinet story, performances, and practice journal.'],
+    ['Gallery', '/gallery/', 'Public photo albums and visual stories.'],
+  ];
+
+  document.querySelectorAll('[data-search-open]').forEach((button) => button.addEventListener('click', () => {
+    if (dialog instanceof HTMLDialogElement) dialog.showModal();
+    if (input instanceof HTMLInputElement) setTimeout(() => input.focus(), 0);
+  }));
+  document.querySelector('[data-search-close]')?.addEventListener('click', () => {
+    if (dialog instanceof HTMLDialogElement) dialog.close();
+  });
+  dialog?.addEventListener('click', (event) => {
+    if (event.target === dialog && dialog instanceof HTMLDialogElement) dialog.close();
+  });
+  input?.addEventListener('input', () => {
+    if (!(input instanceof HTMLInputElement) || !(results instanceof HTMLElement)) return;
+    const query = input.value.trim().toLocaleLowerCase();
+    if (!query) {
+      results.innerHTML = '<p class="muted">Start typing to search the public site.</p>';
+      return;
+    }
+    const matches = entries.filter(([title, , description]) => `${title} ${description}`.toLocaleLowerCase().includes(query));
+    results.innerHTML = matches.length
+      ? matches.map(([title, href, description]) => `<a class="search-result" href="${href}"><strong>${title}</strong><span>${description}</span></a>`).join('')
+      : '<p class="muted">No public results found.</p>';
+  });
+</script>
