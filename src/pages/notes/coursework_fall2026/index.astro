@@ -1,0 +1,11 @@
+---
+import { getEntry } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+const page = await getEntry('courseworks', 'coursework');
+if (!page) throw new Error('Missing page content: coursework');
+const data = page.data;
+---
+<BaseLayout title={data.title} description={data.description}>
+  <header class="page-hero shell"><p class="eyebrow">{data.eyebrow}</p><h1>{data.heading}</h1><p class="lede">{data.lede}</p></header>
+  <section class="section section-soft"><div class="shell content-index">{data.groups.map((group: { name: string; courses: string[] }) => <section class="index-section"><h2>{group.name}</h2><div class="rule-list">{group.courses.map((course: string) => <div class="rule-row"><h3>{course}</h3><span class="small muted">Coming Soon</span></div>)}</div></section>)}</div></section>
+</BaseLayout>

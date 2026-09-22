@@ -1,5 +1,9 @@
 ---
+import { getEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import ComingSoon from '../../components/ComingSoon.astro';
+const page = await getEntry('pages', 'resume');
+if (!page) throw new Error('Missing page content: resume');
+const data = page.data;
 ---
-<BaseLayout title="Resume" description="Resume of Chen-Ling Lin."><header class="page-hero shell"><p class="eyebrow">Professional Profile</p><h1>Resume</h1><p class="lede">A concise overview of my academic background, projects, and experience will be available here soon.</p></header><section class="section section-soft"><div class="shell narrow"><ComingSoon /><p><a class="text-link" href="mailto:linchenling233@gmail.com">Contact Chen-Ling</a></p></div></section></BaseLayout>
+<BaseLayout title={data.title} description={data.description}><header class="page-hero shell"><p class="eyebrow">{data.eyebrow}</p><h1>{data.heading}</h1><p class="lede">{data.lede}</p></header><section class="section section-soft"><div class="shell narrow"><ComingSoon /><p><a class="text-link" href="mailto:linchenling233@gmail.com">{data.contactLabel}</a></p></div></section></BaseLayout>

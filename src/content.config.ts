@@ -29,4 +29,12 @@ const projects = defineCollection({
   }),
 });
 
-export const collections = { writing, projects };
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
+});
+
+const courseworks = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/courseworks' }),
+});
+
+export const collections = { writing, projects, pages, courseworks };
